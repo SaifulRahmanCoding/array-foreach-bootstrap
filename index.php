@@ -5,19 +5,19 @@
 $carousel=array(
 	(object)array(
 		"carousel_item"=>"active",
-		"gambarCarousel"=>"<img src='img/carousel/carousel-1.jpg' class='d-block w-100'>",
+		"gambarCarousel"=>"img/carousel/carousel-1.jpg",
 		"judul"=>"Jong Kreatif Academy",
 		"text"=>"berita teraktual dan terkini akan kami sajikan dengan penuh tanggung jawab"
 	),
 	(object)array(
 		"carousel_item"=>" ",
-		"gambarCarousel"=>"<img src='img/carousel/carousel-2.jpg' class='d-block w-100'>",
+		"gambarCarousel"=>"img/carousel/carousel-2.jpg",
 		"judul"=>"Dapatkan Berita Setiap Hari",
 		"text"=>"Nikmati artikel-artikel yang kami suguhkan dengan gratis kapanpun dan dimanapun"
 	),
 	(object)array(
 		"carousel_item"=>" ",
-		"gambarCarousel"=>"<img src='img/carousel/carousel-3.jpg' class='d-block w-100'>",
+		"gambarCarousel"=>"img/carousel/carousel-3.jpg",
 		"judul"=>"Salau Satu Media Berita Online yang Ada di Indonesia",
 		"text"=>"Jadikan Kami Sebagai Media Berita Online terbaik Untuk Anda"
 	),
@@ -26,17 +26,17 @@ $carousel=array(
 // array fitur
 $fitur=array(
 	(object)array(
-		"icon"=>"<i class='bi bi-person-circle'></i>",
+		"icon"=>"bi bi-person-circle",
 		"judul"=>"Profile",
 		"text"=>"Your Name"
 	),
 	(object)array(
-		"icon"=>"<i class='bi bi-envelope-fill'></i>",
+		"icon"=>"bi bi-envelope-fill",
 		"judul"=>"Mail",
 		"text"=>"jongxx@xxxx.com"
 	),
 	(object)array(
-		"icon"=>"<i class='bi bi-telephone-fill'></i>",
+		"icon"=>"bi bi-telephone-fill",
 		"judul"=>"Contact",
 		"text"=>"021-93xxxxxx"
 	),
@@ -46,33 +46,33 @@ $fitur=array(
 
 $artikel=array(
 	(object)array(
-		"gambarArtikel"=>"<img src='img/artikel/berita-1.jpg' class='card-img-top'>",
+		"gambarArtikel"=>"img/artikel/berita-1.jpg",
 		"judul"=>"Akhir Pilu Lumba-Lumba 5 Meter yang Terdampar di Pantai Minahasa Selatan",
 		"text"=>"Seekor lumba-lumba terdampar di pesisir pantai Desa Lopana, Kecamatan Amurang Timur, Kabupaten Minahasa Selatan, Sulut, Rabu (6/10/2021)."
 	),
 	(object)array(
-		"gambarArtikel"=>"<img src='img/artikel/berita-2.jpg' class='card-img-top'>",
+		"gambarArtikel"=>"img/artikel/berita-2.jpg",
 		"judul"=>"Upaya BSSN Jaga Keamanan Siber Saat PON XX Papua 2021",
 		"text"=>"Badan Siber dan Sandi Negara (BSSN) menyatakan bahwa secara umum, kondisi Papua aman untuk menyelenggarakan Pekan Olahraga Nasional atau PON XX tahun 2021."
 	),
 	(object)array(
-		"gambarArtikel"=>"<img src='img/artikel/berita-3.jpg' class='card-img-top'>",
+		"gambarArtikel"=>"img/artikel/berita-3.jpg",
 		"judul"=>"HUT ke-76 TNI, Bendera Merah Putih Raksasa Berkibar di Langit Jakarta",
 		"text"=>"TNI AU mengerahkan enam helikopter yang membawa bendera Merah Putih serta bendera Trimatra raksasa dalam rangka memperingati HUT ke-76 TNI di langit Jakarta."
 	),
 	(object)array(
-		"gambarArtikel"=>"<img src='img/artikel/berita-4.jpg' class='card-img-top'>",
+		"gambarArtikel"=>"img/artikel/berita-4.jpg",
 		"judul"=>"Infografis Ada Kandungan Parasetamol di Perairan Teluk Jakarta",
 		"text"=>"Adanya kandungan parasetamol di Teluk Jakarta diungkapkan pada Sabtu 2 Oktober 2021. Berdasarkan riset awal Badan Riset dan Inovasi Nasional atau BRIN bersama University of Brighton, Inggris."
 	),
 	(object)array(
-		"gambarArtikel"=>"<img src='img/artikel/berita-5.jpg' class='card-img-top'>",
+		"gambarArtikel"=>"img/artikel/berita-5.jpg",
 		"judul"=>"Transaksi Saham CASA Sentuh Rp 1,1 Triliun di Pasar Negosiasi",
 		"text"=>"Transaksi harian di Bursa Efek Indonesia (BEI) sentuh Rp 21,8 triliun pada perdagangan Rabu (6/10/2021).
 Mengutip data RTI, saham  CASA menguat 6,52 persen ke posisi Rp 392 per saham di pasar negosiasi pada Rabu pekan ini."
 	),
 	(object)array(
-		"gambarArtikel"=>"<img src='img/artikel/berita-6.jpg' class='card-img-top'>",
+		"gambarArtikel"=>"img/artikel/berita-6.jpg",
 		"judul"=>"MU Izinkan Pemainnya Hengkang, Klub Rival Siap Tampung",
 		"text"=>"Gelandang Manchester United atau MU, Donny van de Beek, dikabarkan akan diizinkan meninggalkan Old Trafford selama jendela transfer Januari. Van de Beek kemungkinan bisa pindah ke klub Liga Inggris lainnya."
 	)
@@ -142,7 +142,7 @@ Mengutip data RTI, saham  CASA menguat 6,52 persen ke posisi Rp 392 per saham di
 		<div class="carousel-inner">
 			<? foreach ($carousel as $data) {?>
 			<div class="carousel-item <?=$data->carousel_item?>">
-				<?=$data->gambarCarousel?>
+				<img src='<?=$data->gambarCarousel?>' class='d-block w-100'>
 				<div class="carousel-caption d-none d-md-block">
 					<h5><?=$data->judul?></h5>
 					<p><?=$data->text?></p>
@@ -174,7 +174,7 @@ Mengutip data RTI, saham  CASA menguat 6,52 persen ke posisi Rp 392 per saham di
 					<div class="card text-center py-3">
 						<div class="card-body">
 							<div class="icon mb-4">
-								<?=$data->icon?>
+								<i class='<?=$data->icon?>'></i>
 							</div>
 							<h5 class="card-title"><?=$data->judul?></h5>
 							<p class="card-text"><?=$data->text?></p>
@@ -200,7 +200,7 @@ Mengutip data RTI, saham  CASA menguat 6,52 persen ke posisi Rp 392 per saham di
 				<div class="col-12 col-lg-6 mb-2">
 
 					<div class="card mb-3">
-						<?=$data->gambarArtikel?>
+						<img src='<?=$data->gambarArtikel?>' class='card-img-top'>
 						<div class="card-body">
 							<h5 class="card-title"><?=$data->judul?></h5>
 							<p class="card-text"><?=$data->text?></p>
